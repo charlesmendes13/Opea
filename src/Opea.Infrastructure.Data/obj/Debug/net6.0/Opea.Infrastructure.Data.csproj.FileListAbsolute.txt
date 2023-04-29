@@ -1,0 +1,17 @@
+D:\Visual Studio\Opea\src\Opea.Infrastructure.Data\bin\Debug\net6.0\Opea.Infrastructure.Data.deps.json
+D:\Visual Studio\Opea\src\Opea.Infrastructure.Data\bin\Debug\net6.0\Opea.Infrastructure.Data.runtimeconfig.json
+D:\Visual Studio\Opea\src\Opea.Infrastructure.Data\bin\Debug\net6.0\Opea.Infrastructure.Data.dll
+D:\Visual Studio\Opea\src\Opea.Infrastructure.Data\bin\Debug\net6.0\Opea.Infrastructure.Data.pdb
+D:\Visual Studio\Opea\src\Opea.Infrastructure.Data\bin\Debug\net6.0\Opea.Domain.dll
+D:\Visual Studio\Opea\src\Opea.Infrastructure.Data\bin\Debug\net6.0\Opea.Domain.pdb
+D:\Visual Studio\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\Opea.Infrastructure.Data.csproj.AssemblyReference.cache
+D:\Visual Studio\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\Opea.Infrastructure.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\Opea.Infrastructure.Data.AssemblyInfoInputs.cache
+D:\Visual Studio\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\Opea.Infrastructure.Data.AssemblyInfo.cs
+D:\Visual Studio\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\Opea.Infrastructure.Data.csproj.CoreCompileInputs.cache
+D:\Visual Studio\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\Opea.Infrastructure.Data.csproj.CopyComplete
+D:\Visual Studio\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\Opea.Infrastructure.Data.dll
+D:\Visual Studio\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\refint\Opea.Infrastructure.Data.dll
+D:\Visual Studio\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\Opea.Infrastructure.Data.pdb
+D:\Visual Studio\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\Opea.Infrastructure.Data.genruntimeconfig.cache
+D:\Visual Studio\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\ref\Opea.Infrastructure.Data.dll

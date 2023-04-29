@@ -15,7 +15,7 @@ namespace Opea.Application.Commands
 
         public async Task<Client> Handle(UpdateClientCommand request, CancellationToken cancellationToken)
         {
-            var client = await _clientRepository.UpdateAsync(request.Client);
+            var client = _clientRepository.UpdateAsync(request.Client);
 
             if (client != null)
                 client.AddDomainEvent(new ClientUpdatedEvent(client));

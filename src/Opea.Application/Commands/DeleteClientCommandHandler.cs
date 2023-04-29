@@ -15,7 +15,7 @@ namespace Opea.Application.Commands
 
         public async Task<Client> Handle(DeleteClientCommand request, CancellationToken cancellationToken)
         {
-            var client = await _clientRepository.DeleteAsync(request.Client);
+            var client = _clientRepository.DeleteAsync(request.Client);
 
             if (client != null)
                 client.AddDomainEvent(new ClientRemovedEvent(client));

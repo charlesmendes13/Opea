@@ -7,7 +7,7 @@ namespace Opea.Domain.AggregatesModel.ClientAggregate
         Task<IEnumerable<Client>> GetAllAsync();
         Task<Client> GetByIdAsync(int id);
         Task<Client> InsertAsync(Client client);
-        Task<Client> UpdateAsync(Client client);
-        Task<Client> DeleteAsync(Client client);
+        Client UpdateAsync(Client client);
+        Client DeleteAsync(Client client);
     }
 }
