@@ -13,7 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Domain", "03 - Domain"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Infrastructure", "04 - Infrastructure", "{F5CA0872-CAF3-4192-91B1-00958FC5E31D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opea.Domain", "src\Opea.Domain\Opea.Domain.csproj", "{80ED5A32-E84D-4BA9-BEB3-13AE41437153}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opea.Domain", "src\Opea.Domain\Opea.Domain.csproj", "{80ED5A32-E84D-4BA9-BEB3-13AE41437153}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opea.Application", "src\Opea.Application\Opea.Application.csproj", "{7FCD4D91-348F-4BE8-8307-3C3DA8101076}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{80ED5A32-E84D-4BA9-BEB3-13AE41437153}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80ED5A32-E84D-4BA9-BEB3-13AE41437153}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80ED5A32-E84D-4BA9-BEB3-13AE41437153}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FCD4D91-348F-4BE8-8307-3C3DA8101076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FCD4D91-348F-4BE8-8307-3C3DA8101076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FCD4D91-348F-4BE8-8307-3C3DA8101076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FCD4D91-348F-4BE8-8307-3C3DA8101076}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -35,6 +41,7 @@ Global
 		{16D1E666-8D61-4752-8527-C6045E782DE9} = {49FB636E-0F68-4D15-B452-EFCC36C49A63}
 		{F5CA0872-CAF3-4192-91B1-00958FC5E31D} = {49FB636E-0F68-4D15-B452-EFCC36C49A63}
 		{80ED5A32-E84D-4BA9-BEB3-13AE41437153} = {16D1E666-8D61-4752-8527-C6045E782DE9}
+		{7FCD4D91-348F-4BE8-8307-3C3DA8101076} = {5CE2A5D0-A4F7-4346-9869-C63C61669D7C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3C43E53A-C03E-49D5-AAA7-A82A23F552AC}
