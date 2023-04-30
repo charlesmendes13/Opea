@@ -1,12 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Dapper;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using Opea.Domain.AggregatesModel.ClientAggregate;
 using Opea.Domain.Commom;
 using Opea.Infrastructure.Data.Context;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Opea.Infrastructure.Data.Repository
 {
@@ -14,23 +11,30 @@ namespace Opea.Infrastructure.Data.Repository
     {
         private readonly OpeaContext _context;
         public IUnitOfWork UnitOfWork => _context;
+        private string _connectionString = string.Empty;
 
         public ClientRepository(OpeaContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
+            _connectionString = _context.Database.GetDbConnection().ConnectionString;
         }
 
         public async Task<IEnumerable<Client>> GetAllAsync()
         {
-            return await _context.Client
-                .ToListAsync();
+            using var connection = new SqlConnection(_connectionString);
+            connection.Open();
+
+            return await connection
+                .QueryAsync<Client>(@"SELECT * FROM Client");
         }
 
         public async Task<Client> GetByIdAsync(int id)
         {
-            return await _context.Client
-                .Where(x => x.Id == id)
-                .SingleOrDefaultAsync();
+            using var connection = new SqlConnection(_connectionString);
+            connection.Open();
+
+            return await connection
+                .QueryFirstOrDefaultAsync<Client>(@"SELECT * FROM Client WHERE Id = @id", new { id });                
         }
 
         public async Task<Client> InsertAsync(Client client)
@@ -52,6 +56,6 @@ namespace Opea.Infrastructure.Data.Repository
             _context.Client.Remove(client);
 
             return client;
-        }
+        }        
     }
 }
