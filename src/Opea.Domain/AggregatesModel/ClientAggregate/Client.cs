@@ -15,7 +15,7 @@ namespace Opea.Domain.AggregatesModel.ClientAggregate
         public Client(string companyName, int companySizeId)
         {
             CompanyName = !string.IsNullOrWhiteSpace(companyName) ? companyName : throw new DomainException(nameof(companyName));
-            companySizeId = _companySizeId;
+            _companySizeId = companySizeId;
         }
     }
 }

@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{49FB636E-0F68-4D15-B452-EFCC36C49A63}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Presentation", "01 - Presentation", "{CD341123-1141-4A14-8252-0F6EE33D70C3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Web", "01 - Web", "{CD341123-1141-4A14-8252-0F6EE33D70C3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Application", "02 - Application", "{5CE2A5D0-A4F7-4346-9869-C63C61669D7C}"
 EndProject
@@ -15,11 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Infrastructure", "04 -
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opea.Domain", "src\Opea.Domain\Opea.Domain.csproj", "{80ED5A32-E84D-4BA9-BEB3-13AE41437153}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opea.Application", "src\Opea.Application\Opea.Application.csproj", "{7FCD4D91-348F-4BE8-8307-3C3DA8101076}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opea.Application", "src\Opea.Application\Opea.Application.csproj", "{7FCD4D91-348F-4BE8-8307-3C3DA8101076}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opea.Infrastructure.Data", "src\Opea.Infrastructure.Data\Opea.Infrastructure.Data.csproj", "{A69186C4-16E1-4324-8F9C-944FE364EAFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opea.Infrastructure.Data", "src\Opea.Infrastructure.Data\Opea.Infrastructure.Data.csproj", "{A69186C4-16E1-4324-8F9C-944FE364EAFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opea.Infrastructure.IoC", "src\Opea.Infrastructure.IoC\Opea.Infrastructure.IoC.csproj", "{1705CE86-0E21-41AC-9AA7-24EF89B8DBCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opea.Infrastructure.IoC", "src\Opea.Infrastructure.IoC\Opea.Infrastructure.IoC.csproj", "{1705CE86-0E21-41AC-9AA7-24EF89B8DBCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
