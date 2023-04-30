@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opea.Application", "src\Ope
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opea.Infrastructure.Data", "src\Opea.Infrastructure.Data\Opea.Infrastructure.Data.csproj", "{A69186C4-16E1-4324-8F9C-944FE364EAFD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opea.Infrastructure.IoC", "src\Opea.Infrastructure.IoC\Opea.Infrastructure.IoC.csproj", "{1705CE86-0E21-41AC-9AA7-24EF89B8DBCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{A69186C4-16E1-4324-8F9C-944FE364EAFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A69186C4-16E1-4324-8F9C-944FE364EAFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A69186C4-16E1-4324-8F9C-944FE364EAFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1705CE86-0E21-41AC-9AA7-24EF89B8DBCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1705CE86-0E21-41AC-9AA7-24EF89B8DBCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1705CE86-0E21-41AC-9AA7-24EF89B8DBCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1705CE86-0E21-41AC-9AA7-24EF89B8DBCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +55,7 @@ Global
 		{80ED5A32-E84D-4BA9-BEB3-13AE41437153} = {16D1E666-8D61-4752-8527-C6045E782DE9}
 		{7FCD4D91-348F-4BE8-8307-3C3DA8101076} = {5CE2A5D0-A4F7-4346-9869-C63C61669D7C}
 		{A69186C4-16E1-4324-8F9C-944FE364EAFD} = {F5CA0872-CAF3-4192-91B1-00958FC5E31D}
+		{1705CE86-0E21-41AC-9AA7-24EF89B8DBCF} = {F5CA0872-CAF3-4192-91B1-00958FC5E31D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3C43E53A-C03E-49D5-AAA7-A82A23F552AC}

@@ -10,7 +10,6 @@ namespace Opea.Infrastructure.Data.Context
     public class OpeaContext : DbContext, IUnitOfWork
     {
         private readonly IMediator _mediator;
-        private IDbContextTransaction _currentTransaction;
 
         public DbSet<Client> Client { get; set; }
         public DbSet<CompanySize> CompanySize { get; set; }
