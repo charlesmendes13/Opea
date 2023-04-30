@@ -5,6 +5,6 @@ namespace Opea.Application.Queries
 {
     public class GetByIdClientQuery : IRequest<Client>
     {
-        public int Id { get; protected set; }
+        public int Id { get; set; }
     }
 }

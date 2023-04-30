@@ -44,14 +44,14 @@ namespace Opea.Infrastructure.Data.Repository
             return client;
         }
 
-        public Client UpdateAsync(Client client)
+        public Client Update(Client client)
         {
             _context.Client.Update(client);
 
             return client;
         }
 
-        public Client DeleteAsync(Client client)
+        public Client Delete(Client client)
         {
             _context.Client.Remove(client);
 

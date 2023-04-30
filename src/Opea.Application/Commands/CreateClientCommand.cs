@@ -5,6 +5,6 @@ namespace Opea.Application.Commands
 {
     public class CreateClientCommand : IRequest<Client>
     {
-        public Client Client { get; private set; }
+        public Client Client { get; set; }
     }
 }
