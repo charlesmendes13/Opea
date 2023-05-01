@@ -8,8 +8,8 @@ namespace Opea.Unit.Test.Domain.Events
         [Fact]
         public void ClientRemovedEvent()
         {
-            var client = new Client("Microsoft", 3);
-            var clientRemovedEvent = new ClientRemovedEvent(client);
+            var client = new Mock<Client>("Microsoft", 3);
+            var clientRemovedEvent = new ClientRemovedEvent(client.Object);
 
             Assert.NotNull(clientRemovedEvent);
         }

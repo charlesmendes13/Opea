@@ -5,5 +5,6 @@ namespace Opea.Application.Queries
 {
     public class GetAllClientQuery : IRequest<IEnumerable<Client>>
     {
+        public GetAllClientQuery() { }
     }
 }

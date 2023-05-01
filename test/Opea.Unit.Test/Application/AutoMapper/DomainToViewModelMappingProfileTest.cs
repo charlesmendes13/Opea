@@ -13,9 +13,9 @@ namespace Opea.Unit.Test.Application.AutoMapper
             var config = new MapperConfiguration(cfg => cfg.AddProfile<DomainToViewModelMappingProfile>());
             var mapper = config.CreateMapper();
 
-            var request = new Client("Google", 3);
+            var request = new Mock<Client>("Google", 3);
 
-            var result = mapper.Map<Client, ClientViewModel>(request);
+            var result = mapper.Map<Client, ClientViewModel>(request.Object);
 
             Assert.NotNull(result);
         }
@@ -26,9 +26,9 @@ namespace Opea.Unit.Test.Application.AutoMapper
             var config = new MapperConfiguration(cfg => cfg.AddProfile<DomainToViewModelMappingProfile>());
             var mapper = config.CreateMapper();
 
-            var request = new CompanySize(2, "Medium");
+            var request = new Mock<CompanySize>(2, "Medium");
 
-            var result = mapper.Map<CompanySize, CompanySizeViewModel>(request);
+            var result = mapper.Map<CompanySize, CompanySizeViewModel>(request.Object);
 
             Assert.NotNull(result);
         }

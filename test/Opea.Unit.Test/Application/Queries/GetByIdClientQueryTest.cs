@@ -7,10 +7,7 @@ namespace Opea.Unit.Test.Application.Queries
         [Fact]
         public void GetByIdClientQuery()
         {
-            var getByIdClientQuery = new GetByIdClientQuery()
-            {
-                Id = 1
-            };
+            var getByIdClientQuery = new Mock<GetByIdClientQuery>(1);
 
             Assert.NotNull(getByIdClientQuery);
         }

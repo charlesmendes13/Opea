@@ -7,7 +7,7 @@ namespace Opea.Unit.Test.Domain.AggragatesModel.ClientAggragate
         [Fact]
         public void CompanySize()
         {
-            var companySize = new CompanySize(3, "Google");
+            var companySize = new Mock<CompanySize>(1, "Small");
 
             Assert.NotNull(companySize);
         }

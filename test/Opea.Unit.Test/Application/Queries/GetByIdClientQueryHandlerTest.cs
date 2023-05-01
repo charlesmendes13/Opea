@@ -15,13 +15,10 @@ namespace Opea.Unit.Test.Application.Queries
             clientRepository.Setup(x => x.GetByIdAsync(It.IsAny<int>()))
                 .ReturnsAsync(client.Object);
 
-            var query = new GetByIdClientQuery()
-            { 
-                Id = 1
-            };
+            var query = new Mock<GetByIdClientQuery>(client.Object.Id);
             var handler = new Mock<GetByIdClientQueryHandler>(clientRepository.Object);
 
-            var result = await handler.Object.Handle(query, new CancellationToken());
+            var result = await handler.Object.Handle(query.Object, new CancellationToken());
 
             Assert.NotNull(result);
         }

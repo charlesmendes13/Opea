@@ -7,9 +7,9 @@ namespace Opea.Unit.Test.Application.Queries
         [Fact]
         public void GetAllClientQuery()
         {
-            var getAllClientQuery = new GetAllClientQuery();
+            var getAllClientQuery = new Mock<GetAllClientQuery>();
 
-            Assert.NotNull(getAllClientQuery);
+            Assert.NotNull(getAllClientQuery.Object);
         }
     }
 }

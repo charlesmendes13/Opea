@@ -1,9 +1,4 @@
 ﻿using Opea.Domain.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Opea.Unit.Test.Domain.Exeptions
 {
@@ -12,25 +7,25 @@ namespace Opea.Unit.Test.Domain.Exeptions
         [Fact]
         public void DomainException()
         {
-            var domainException = new DomainException();
+            var domainException = new Mock<DomainException>();
 
-            Assert.NotNull(domainException);
+            Assert.NotNull(domainException.Object);
         }
 
         [Fact]
         public void DomainExceptionCompanyName()
         {
-            var domainException = new DomainException("O Nome da Empresa não pode ser nulo ou vazio");
+            var domainException = new Mock<DomainException>("O Nome da Empresa não pode ser nulo ou vazio");
 
-            Assert.NotNull(domainException);
+            Assert.NotNull(domainException.Object);
         }
 
         [Fact]
         public void DomainExceptionCompanyNameError()
         {
-            var domainException = new DomainException("O Nome da Empresa não pode ser nulo ou vazio", new Exception());
+            var domainException = new Mock<DomainException>("O Nome da Empresa não pode ser nulo ou vazio", new Exception());
 
-            Assert.NotNull(domainException);
+            Assert.NotNull(domainException.Object);
         }
     }
 }

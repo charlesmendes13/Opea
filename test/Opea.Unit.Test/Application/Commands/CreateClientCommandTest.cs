@@ -8,14 +8,10 @@ namespace Opea.Unit.Test.Application.Commands
         [Fact]
         public void CreateClientCommand()
         {
-            var client = new Client("Google", 3);
+            var client = new Mock<Client>("Google", 3);
+            var createClientCommand = new Mock<CreateClientCommand>(client.Object);
 
-            var createClientCommand = new CreateClientCommand()
-            {
-                Client = client
-            };
-
-            Assert.NotNull(createClientCommand);
+            Assert.NotNull(createClientCommand.Object);
         }
     }
 }

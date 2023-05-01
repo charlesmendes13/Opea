@@ -1,10 +1,5 @@
 ﻿using Opea.Application.Queries;
 using Opea.Domain.AggregatesModel.ClientAggregate;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Opea.Unit.Test.Application.Queries
 {
@@ -13,22 +8,21 @@ namespace Opea.Unit.Test.Application.Queries
         [Fact]
         public async void GetAllClientQueryHandler()
         {
-            var client = new Mock<Client>("Meta", 3);
-            client.Setup(x => x.Id).Returns(1);
-
             var clients = new List<Client>()
             {
-                client.Object
+                new Mock<Client>("Meta", 3).Object,
+                new Mock<Client>("Google", 3).Object,
+                new Mock<Client>("Microsoft", 3).Object
             };
 
             var clientRepository = new Mock<IClientRepository>();
             clientRepository.Setup(x => x.GetAllAsync())
                 .ReturnsAsync(clients);
 
-            var query = new GetAllClientQuery();
+            var query = new Mock<GetAllClientQuery>();
             var handler = new Mock<GetAllClientQueryHandler>(clientRepository.Object);
 
-            var result = await handler.Object.Handle(query, new CancellationToken());
+            var result = await handler.Object.Handle(query.Object, new CancellationToken());
 
             Assert.NotNull(result);
         }

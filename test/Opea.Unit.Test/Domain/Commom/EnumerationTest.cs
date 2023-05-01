@@ -7,9 +7,7 @@ namespace Opea.Unit.Test.Domain.Commom
         [Fact]
         public void Enumeration()
         {
-            var enumeration = new Mock<Enumeration>()
-            {
-            };
+            var enumeration = new Mock<Enumeration>();
 
             Assert.NotNull(enumeration);
         }

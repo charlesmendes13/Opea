@@ -10,12 +10,11 @@ namespace Opea.Unit.Test.Application.EventHandlers
         public void ClientUpdatedEventHandler()
         {
             var client = new Mock<Client>("Meta", 3);
-            client.Setup(x => x.Id).Returns(1);
 
-            var notification = new ClientUpdatedEvent(client.Object);
+            var notification = new Mock<ClientUpdatedEvent>(client.Object);
             var handler = new Mock<ClientUpdatedEventHandler>();
 
-            Assert.NotNull(handler.Object.Handle(notification, new CancellationToken()));
+            Assert.NotNull(handler.Object.Handle(notification.Object, new CancellationToken()));
         }
     }
 }

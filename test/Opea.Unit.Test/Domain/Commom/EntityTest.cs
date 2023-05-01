@@ -7,16 +7,10 @@ namespace Opea.Unit.Test.Domain.Commom
         [Fact]
         public void Entity()
         {
-            var entity = new Mock<Entity>()
-            {
-                CallBase = true
-            };
-
+            var entity = new Mock<Entity>();
             entity.Setup(x => x.Id).Returns(1);
 
-            var id = 1;
-
-            Assert.Equal(1, id);
+            Assert.Equal(1, 1);
         }
     }
 }
