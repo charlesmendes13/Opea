@@ -4,6 +4,7 @@ using Opea.Infrastructure.Data.Context;
 using Opea.Infrastructure.IoC;
 using System.Reflection;
 using MediatR;
+using Opea.Application.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,6 +43,13 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(x => x
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader());
+
+app.UseMiddleware<ErrorHandlerMiddleware>();
 
 app.UseAuthorization();
 

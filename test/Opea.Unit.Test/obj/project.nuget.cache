@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nwWOONUby3PvYEZw1rr/NDqqFQEYF/E1Nn9jRCkih7L8QLFQBKDGWo4ivAzDtp9z8vzRz9MfdxD+Jx9Vy2VuaQ==",
+  "dgSpecHash": "lplXoTqOSwbtZIqiFCYdFN7QtbG8Cnzn7aklwFUmZ62eouuFRF0U+O6Z3LPQvhqJqhXfLjHLPfMXTEJzANtpKw==",
   "success": true,
   "projectFilePath": "D:\\Visual Studio\\Opea\\test\\Opea.Unit.Test\\Opea.Unit.Test.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,8 @@
     "C:\\Users\\charl\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+    "C:\\Users\\charl\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\charl\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

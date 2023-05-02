@@ -4,7 +4,6 @@ using Opea.Application.Commands;
 using Opea.Application.EventHandlers;
 using Opea.Application.Queries;
 using Opea.Domain.AggregatesModel.ClientAggregate;
-using Opea.Domain.Commom;
 using Opea.Domain.Events;
 using Opea.Infrastructure.Data.Context;
 using Opea.Infrastructure.Data.Repository;

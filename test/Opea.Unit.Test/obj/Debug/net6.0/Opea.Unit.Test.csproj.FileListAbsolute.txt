@@ -166,3 +166,5 @@ D:\Visual Studio\Opea\test\Opea.Unit.Test\obj\Debug\net6.0\Opea.Unit.Test.genrun
 D:\Visual Studio\Opea\test\Opea.Unit.Test\obj\Debug\net6.0\ref\Opea.Unit.Test.dll
 D:\Visual Studio\Opea\test\Opea.Unit.Test\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Visual Studio\Opea\test\Opea.Unit.Test\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+D:\Visual Studio\Opea\test\Opea.Unit.Test\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\Visual Studio\Opea\test\Opea.Unit.Test\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Features.dll
