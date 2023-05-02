@@ -4,6 +4,7 @@ using Opea.Application.Commands;
 using Opea.Application.EventHandlers;
 using Opea.Application.Queries;
 using Opea.Domain.AggregatesModel.ClientAggregate;
+using Opea.Domain.Commom;
 using Opea.Domain.Events;
 using Opea.Infrastructure.Data.Context;
 using Opea.Infrastructure.Data.Repository;
@@ -16,22 +17,22 @@ namespace Opea.Infrastructure.IoC
         {
             // Application
 
-            container.AddTransient<IRequestHandler<GetAllClientQuery, IEnumerable<Client>>, GetAllClientQueryHandler>();
-            container.AddTransient<IRequestHandler<GetByIdClientQuery, Client>, GetByIdClientQueryHandler>();
-            container.AddTransient<IRequestHandler<CreateClientCommand, Client>, CreateClientCommandHandler>();
-            container.AddTransient<IRequestHandler<DeleteClientCommand, Client>, DeleteClientCommandHandler>();
-            container.AddTransient<IRequestHandler<UpdateClientCommand, Client>, UpdateClientCommandHandler>();
+            container.AddScoped<IRequestHandler<GetAllClientQuery, IEnumerable<Client>>, GetAllClientQueryHandler>();
+            container.AddScoped<IRequestHandler<GetByIdClientQuery, Client>, GetByIdClientQueryHandler>();
+            container.AddScoped<IRequestHandler<CreateClientCommand, Client>, CreateClientCommandHandler>();
+            container.AddScoped<IRequestHandler<DeleteClientCommand, Client>, DeleteClientCommandHandler>();
+            container.AddScoped<IRequestHandler<UpdateClientCommand, Client>, UpdateClientCommandHandler>();
 
             // Domain
 
-            container.AddTransient<INotificationHandler<ClientRegisteredEvent>, ClientRegisteredEventHandler>();
-            container.AddTransient<INotificationHandler<ClientRemovedEvent>, ClientRemovedEventHandler>();
-            container.AddTransient<INotificationHandler<ClientUpdatedEvent>, ClientUpdatedEventHandler>();
+            container.AddScoped<INotificationHandler<ClientRegisteredEvent>, ClientRegisteredEventHandler>();
+            container.AddScoped<INotificationHandler<ClientRemovedEvent>, ClientRemovedEventHandler>();
+            container.AddScoped<INotificationHandler<ClientUpdatedEvent>, ClientUpdatedEventHandler>();
 
             // Infra
 
-            container.AddTransient<OpeaContext>();
-            container.AddTransient<IClientRepository, ClientRepository>();
+            container.AddScoped<IClientRepository, ClientRepository>();
+            container.AddScoped<OpeaContext>();
         }
     }
 }

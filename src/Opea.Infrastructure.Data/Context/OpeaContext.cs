@@ -23,6 +23,12 @@ namespace Opea.Infrastructure.Data.Context
         {
             modelBuilder.ApplyConfiguration(new ClientMap());
             modelBuilder.ApplyConfiguration(new CompanySizeMap());
+
+            modelBuilder.Entity<CompanySize>().HasData(
+                new CompanySize(1, "Small"),
+                new CompanySize(2, "Medium"),
+                new CompanySize(3, "Large")
+                );
         }
 
         public async Task<bool> SaveEntitiesAsync(CancellationToken cancellationToken = default(CancellationToken))
