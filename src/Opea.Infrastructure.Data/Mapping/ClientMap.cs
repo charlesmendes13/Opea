@@ -10,20 +10,12 @@ namespace Opea.Infrastructure.Data.Mapping
         {
             builder.ToTable("Client");
 
-            builder.HasKey(b => b.Id);
-
-            builder.Ignore(b => b.DomainEvents);
+            builder.HasKey(b => b.Id);            
 
             builder.Property(b => b.CompanyName);
+            builder.Property(b => b.CompanySizeId);
 
-            builder.Property<int>("_companySizeId")
-                .UsePropertyAccessMode(PropertyAccessMode.Field)
-                .HasColumnName("CompanySize")
-                .IsRequired();
-
-            builder.HasOne(p => p.CompanySize)
-                .WithMany()
-                .HasForeignKey("_companySizeId");
+            builder.Ignore(b => b.DomainEvents);
         }
     }
 }

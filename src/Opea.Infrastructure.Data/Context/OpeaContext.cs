@@ -11,7 +11,6 @@ namespace Opea.Infrastructure.Data.Context
         private readonly IMediator _mediator;
 
         public DbSet<Client> Client { get; set; }
-        public DbSet<CompanySize> CompanySize { get; set; }
 
         public OpeaContext(DbContextOptions<OpeaContext> options, IMediator mediator) : base(options)
         {
@@ -21,13 +20,6 @@ namespace Opea.Infrastructure.Data.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new ClientMap());
-            modelBuilder.ApplyConfiguration(new CompanySizeMap());
-
-            modelBuilder.Entity<CompanySize>().HasData(
-                new CompanySize(1, "Small"),
-                new CompanySize(2, "Medium"),
-                new CompanySize(3, "Large")
-                );
         }
 
         public async Task<bool> SaveEntitiesAsync(CancellationToken cancellationToken = default(CancellationToken))

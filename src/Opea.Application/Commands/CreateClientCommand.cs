@@ -3,7 +3,7 @@ using Opea.Domain.AggregatesModel.ClientAggregate;
 
 namespace Opea.Application.Commands
 {
-    public class CreateClientCommand : IRequest<Client>
+    public class CreateClientCommand : IRequest<bool>
     {
         public Client Client { get; private set; }
 

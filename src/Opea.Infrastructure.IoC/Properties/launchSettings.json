@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Opea.Infrastructure.IoC": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:53023;http://localhost:53025"
+    }
+  }
+}

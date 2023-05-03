@@ -32,59 +32,12 @@ namespace Opea.Infrastructure.Data.Migrations
                     b.Property<string>("CompanyName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("_companySizeId")
-                        .HasColumnType("int")
-                        .HasColumnName("CompanySize");
+                    b.Property<int>("CompanySizeId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("_companySizeId");
 
                     b.ToTable("Client", (string)null);
-                });
-
-            modelBuilder.Entity("Opea.Domain.AggregatesModel.ClientAggregate.CompanySize", b =>
-                {
-                    b.Property<int>("Id")
-                        .HasColumnType("int")
-                        .HasDefaultValue(1);
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("CompanySize", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Name = "Small"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Name = "Medium"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Name = "Large"
-                        });
-                });
-
-            modelBuilder.Entity("Opea.Domain.AggregatesModel.ClientAggregate.Client", b =>
-                {
-                    b.HasOne("Opea.Domain.AggregatesModel.ClientAggregate.CompanySize", "CompanySize")
-                        .WithMany()
-                        .HasForeignKey("_companySizeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("CompanySize");
                 });
 #pragma warning restore 612, 618
         }

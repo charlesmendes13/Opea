@@ -24,8 +24,10 @@ namespace Opea.Infrastructure.Data.Repository
             using var connection = new SqlConnection(_connectionString);
             connection.Open();
 
-            return await connection
-                .QueryAsync<Client>(@"SELECT * FROM Client");
+            var result = await connection
+                .QueryAsync<Client>(@"SELECT * FROM [opea].[dbo].[Client]");
+
+            return result.ToList();
         }
 
         public async Task<Client> GetByIdAsync(int id)
@@ -33,29 +35,25 @@ namespace Opea.Infrastructure.Data.Repository
             using var connection = new SqlConnection(_connectionString);
             connection.Open();
 
-            return await connection
-                .QueryFirstOrDefaultAsync<Client>(@"SELECT * FROM Client WHERE Id = @id", new { id });                
+            var result = await connection
+                .QueryAsync<Client>(@"SELECT * FROM [opea].[dbo].[Client] WHERE [Id] = @id", new { id });
+
+            return result.FirstOrDefault();                
         }
 
-        public async Task<Client> InsertAsync(Client client)
+        public async Task InsertAsync(Client client)
         {
             await _context.Client.AddAsync(client);
-
-            return client;
         }
 
-        public Client Update(Client client)
+        public void Update(Client client)
         {
             _context.Client.Update(client);
-
-            return client;
         }
 
-        public Client Delete(Client client)
+        public void Delete(Client client)
         {
             _context.Client.Remove(client);
-
-            return client;
         }        
     }
 }

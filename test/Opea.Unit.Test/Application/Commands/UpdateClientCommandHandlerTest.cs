@@ -13,8 +13,7 @@ namespace Opea.Unit.Test.Application.Commands
             var cancellationToken = true;
 
             var clientRepository = new Mock<IClientRepository>();
-            clientRepository.Setup(x => x.Update(It.IsAny<Client>()))
-                .Returns(client.Object);
+            clientRepository.Setup(x => x.Update(It.IsAny<Client>()));               
             clientRepository.Setup(x => x.UnitOfWork.SaveEntitiesAsync(It.IsAny<CancellationToken>()))
                 .ReturnsAsync(cancellationToken);
 
@@ -23,7 +22,7 @@ namespace Opea.Unit.Test.Application.Commands
 
             var result = await handler.Object.Handle(command.Object, new CancellationToken());
 
-            Assert.NotNull(result);
+            Assert.True(result);
         }
     }
 }

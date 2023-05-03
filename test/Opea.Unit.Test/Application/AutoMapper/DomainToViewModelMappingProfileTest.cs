@@ -18,19 +18,6 @@ namespace Opea.Unit.Test.Application.AutoMapper
             var result = mapper.Map<Client, ClientViewModel>(request.Object);
 
             Assert.NotNull(result);
-        }
-
-        [Fact]
-        public void CompanySizeViewModel()
-        {
-            var config = new MapperConfiguration(cfg => cfg.AddProfile<DomainToViewModelMappingProfile>());
-            var mapper = config.CreateMapper();
-
-            var request = new Mock<CompanySize>(2, "Medium");
-
-            var result = mapper.Map<CompanySize, CompanySizeViewModel>(request.Object);
-
-            Assert.NotNull(result);
-        }
+        }       
     }
 }

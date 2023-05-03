@@ -17,31 +17,12 @@ namespace Opea.Unit.Test.Application.AutoMapper
             {
                 Id = 1,
                 CompanyName = "Google",
-                CompanySize = new CompanySizeViewModel()
-                {
-                    Id = 3
-                }
+                CompanySizeId = 3
             };
 
             var result = mapper.Map<ClientViewModel, Client>(request);
 
             Assert.NotNull(result);
-        }
-
-        [Fact]
-        public void CompanySizeViewModel()
-        {
-            var config = new MapperConfiguration(cfg => cfg.AddProfile<ViewModelToDomainMappingProfile>());
-            var mapper = config.CreateMapper();
-
-            var request = new CompanySizeViewModel()
-            {
-                Id = 1
-            };
-
-            var result = mapper.Map<CompanySizeViewModel, CompanySize>(request);
-
-            Assert.NotNull(result);
-        }
+        }        
     }
 }

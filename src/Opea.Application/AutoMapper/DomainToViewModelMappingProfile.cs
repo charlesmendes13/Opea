@@ -8,8 +8,7 @@ namespace Opea.Application.AutoMapper
     {
         public DomainToViewModelMappingProfile()
         {
-            CreateMap<CompanySize, CompanySizeViewModel>();
-            CreateMap<Client, ClientViewModel>();
+            CreateMap<Client, ClientViewModel>();              
         }
     }
 }

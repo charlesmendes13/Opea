@@ -4,7 +4,7 @@ using Opea.Domain.Events;
 
 namespace Opea.Application.Commands
 {
-    public class UpdateClientCommandHandler : IRequestHandler<UpdateClientCommand, Client>
+    public class UpdateClientCommandHandler : IRequestHandler<UpdateClientCommand, bool>
     {
         private readonly IClientRepository _clientRepository;
 
@@ -13,16 +13,16 @@ namespace Opea.Application.Commands
             _clientRepository = clientRepository;
         }
 
-        public async Task<Client> Handle(UpdateClientCommand request, CancellationToken cancellationToken)
+        public async Task<bool> Handle(UpdateClientCommand request, CancellationToken cancellationToken)
         {
-            var client = _clientRepository.Update(request.Client);
+            _clientRepository.Update(request.Client);
 
-            if (client != null)
-                client.AddDomainEvent(new ClientUpdatedEvent(client));
+            if (request.Client != null)
+                request.Client.AddDomainEvent(new ClientUpdatedEvent(request.Client));
 
             await _clientRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken);
 
-            return client;
+            return true;
         }
     }
 }

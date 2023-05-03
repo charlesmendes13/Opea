@@ -18,9 +18,9 @@ namespace Opea.Infrastructure.IoC
 
             container.AddScoped<IRequestHandler<GetAllClientQuery, IEnumerable<Client>>, GetAllClientQueryHandler>();
             container.AddScoped<IRequestHandler<GetByIdClientQuery, Client>, GetByIdClientQueryHandler>();
-            container.AddScoped<IRequestHandler<CreateClientCommand, Client>, CreateClientCommandHandler>();
-            container.AddScoped<IRequestHandler<DeleteClientCommand, Client>, DeleteClientCommandHandler>();
-            container.AddScoped<IRequestHandler<UpdateClientCommand, Client>, UpdateClientCommandHandler>();
+            container.AddScoped<IRequestHandler<CreateClientCommand, bool>, CreateClientCommandHandler>();
+            container.AddScoped<IRequestHandler<DeleteClientCommand, bool>, DeleteClientCommandHandler>();
+            container.AddScoped<IRequestHandler<UpdateClientCommand, bool>, UpdateClientCommandHandler>();
 
             // Domain
 

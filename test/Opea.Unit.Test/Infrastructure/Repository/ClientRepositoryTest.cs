@@ -46,12 +46,9 @@ namespace Opea.Unit.Test.Infrastructure.Repository
             client.Setup(x => x.Id).Returns(1);
 
             var clientRepository = new Mock<IClientRepository>();
-            clientRepository.Setup(x => x.InsertAsync(It.IsAny<Client>()))
-                .ReturnsAsync(client.Object);
+            clientRepository.Setup(x => x.InsertAsync(It.IsAny<Client>()));
 
-            var result = await clientRepository.Object.InsertAsync(client.Object);
-
-            Assert.NotNull(result);
+            await clientRepository.Object.InsertAsync(client.Object);
         }
 
         [Fact]
@@ -61,12 +58,9 @@ namespace Opea.Unit.Test.Infrastructure.Repository
             client.Setup(x => x.Id).Returns(1);
 
             var clientRepository = new Mock<IClientRepository>();
-            clientRepository.Setup(x => x.Update(It.IsAny<Client>()))
-                .Returns(client.Object);
+            clientRepository.Setup(x => x.Update(It.IsAny<Client>()));
 
-            var result = clientRepository.Object.Update(client.Object);
-
-            Assert.NotNull(result);
+            clientRepository.Object.Update(client.Object);
         }
 
         [Fact]
@@ -76,12 +70,9 @@ namespace Opea.Unit.Test.Infrastructure.Repository
             client.Setup(x => x.Id).Returns(1);
 
             var clientRepository = new Mock<IClientRepository>();
-            clientRepository.Setup(x => x.Delete(It.IsAny<Client>()))
-                .Returns(client.Object);
+            clientRepository.Setup(x => x.Delete(It.IsAny<Client>()));
 
-            var result = clientRepository.Object.Delete(client.Object);
-
-            Assert.NotNull(result);
+            clientRepository.Object.Delete(client.Object);
         }
     }
 }

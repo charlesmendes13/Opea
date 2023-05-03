@@ -3,7 +3,7 @@ using Opea.Domain.AggregatesModel.ClientAggregate;
 
 namespace Opea.Application.Commands
 {
-    public class UpdateClientCommand : IRequest<Client>
+    public class UpdateClientCommand : IRequest<bool>
     {
         public Client Client { get; private set; }
 
