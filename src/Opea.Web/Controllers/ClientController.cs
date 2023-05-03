@@ -24,7 +24,9 @@ namespace Opea.Web.Controllers
         {
             var clients = await _mediator.Send(new GetAllClientQuery());
 
-            return View(_mapper.Map<IEnumerable<ClientViewModel>>(clients));
+            var viewModel = _mapper.Map<IEnumerable<ClientViewModel>>(clients);
+
+            return View(viewModel);
         }
 
         public async Task<IActionResult> Details(int id)

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Opea.Application.AutoMapper;
 using Opea.Infrastructure.Data.Context;
 using Opea.Infrastructure.IoC;
+using System.Net.NetworkInformation;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,7 +19,8 @@ builder.Services.AddDbContext<OpeaContext>(option =>
 
 // MediatR
 
-builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
+builder.Services.AddMediatR(cfg =>
+     cfg.RegisterServicesFromAssembly(typeof(Ping).Assembly));
 
 // IoC
 
