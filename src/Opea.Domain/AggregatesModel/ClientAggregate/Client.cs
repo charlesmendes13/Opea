@@ -7,7 +7,6 @@ namespace Opea.Domain.AggregatesModel.ClientAggregate
     {
         public string CompanyName { get; private set; }
         public int CompanySizeId { get; private set; }
-
         protected Client() { }
 
         public Client(string companyName, int companySizeId)

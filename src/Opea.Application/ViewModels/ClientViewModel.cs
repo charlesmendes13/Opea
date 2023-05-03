@@ -12,7 +12,8 @@ namespace Opea.Application.ViewModels
         [DisplayName("Nome da Empresa")]
         public string CompanyName { get; set; }
 
-        [Required(ErrorMessage = "O Porte da Empresa é obrigatório")]
+
+        [Range(0, int.MaxValue, ErrorMessage = "O Porte da Empresa é obrigatório")]
         public int CompanySizeId { get; set; }
 
         [DisplayName("Porte da Empresa")]

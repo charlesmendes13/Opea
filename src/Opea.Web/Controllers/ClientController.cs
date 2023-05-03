@@ -41,8 +41,6 @@ namespace Opea.Web.Controllers
 
         public IActionResult Create()
         {
-            ViewData["CompanySize"] = new SelectList(CompanySize.GetAll<CompanySize>(), "Id", "Name");
-
             return View();
         }
 
@@ -66,8 +64,6 @@ namespace Opea.Web.Controllers
 
             if (client == null)
                 return BadRequest();
-
-            ViewData["CompanySize"] = new SelectList(CompanySize.GetAll<CompanySize>(), "Id", "Name");
 
             return View(_mapper.Map<ClientViewModel>(client));
         }
@@ -108,6 +104,14 @@ namespace Opea.Web.Controllers
             await _mediator.Send(new DeleteClientCommand(client));            
 
             return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        public JsonResult GetCompanySize()
+        {
+            var companySize = CompanySize.GetAll<CompanySize>();
+            
+            return Json(companySize);
         }
     }
 }
