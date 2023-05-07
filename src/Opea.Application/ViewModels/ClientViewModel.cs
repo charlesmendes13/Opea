@@ -11,8 +11,7 @@ namespace Opea.Application.ViewModels
         [DisplayName("Nome da Empresa")]
         [Required(ErrorMessage = "O Nome da Empresa é obrigatório")]        
         public string CompanyName { get; set; }
-
-        [DisplayName("Porte da Empresa")]               
+                       
         public CompanySizeViewModel CompanySize { get; set; }
     }
 }

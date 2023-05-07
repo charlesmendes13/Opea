@@ -11,7 +11,7 @@ using Opea.Infrastructure.Data.Context;
 namespace Opea.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(OpeaContext))]
-    [Migration("20230503005749_Initial")]
+    [Migration("20230507152208_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

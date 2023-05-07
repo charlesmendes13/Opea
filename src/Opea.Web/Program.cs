@@ -1,10 +1,10 @@
-using MediatR;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 using Opea.Application.AutoMapper;
+using Opea.Domain.Exceptions;
 using Opea.Infrastructure.Data.Context;
 using Opea.Infrastructure.IoC;
-using System.Net.NetworkInformation;
-using System.Reflection;
+using System.Net;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,8 +19,8 @@ builder.Services.AddDbContext<OpeaContext>(option =>
 
 // MediatR
 
-builder.Services.AddMediatR(cfg =>
-     cfg.RegisterServicesFromAssembly(typeof(Ping).Assembly));
+builder.Services.AddMediatR(cfg => 
+    cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
 
 // IoC
 
@@ -32,13 +32,41 @@ builder.Services.AddAutoMapper(typeof(ViewModelToDomainMappingProfile), typeof(D
 
 var app = builder.Build();
 
-app.UseExceptionHandler("/Home/Error");
-
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
+}
+else
+{
+    app.UseExceptionHandler(options => 
+    {
+        options.Run(async context => 
+        {
+            context.Response.ContentType = "text/html";
+
+            var exception = context.Features.Get<IExceptionHandlerFeature>();
+            var response = context.Response;
+
+            switch (exception)
+            {
+                case DomainException e:
+                    response.StatusCode = (int)HttpStatusCode.BadRequest;
+                    break;
+                case KeyNotFoundException e:
+                    response.StatusCode = (int)HttpStatusCode.NotFound;
+                    break;
+                default:
+                    response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                    break;
+            }
+
+            context.Response.Redirect($"/Home/Error?statusCode={response.StatusCode}&message={exception.Error.Message}");
+
+            await Task.CompletedTask;
+        });    
+    }); 
 }
 
 app.UseHttpsRedirection();

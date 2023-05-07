@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace Opea.Application.ViewModels
 {
@@ -7,6 +8,7 @@ namespace Opea.Application.ViewModels
         [Range(0, int.MaxValue, ErrorMessage = "O Porte da Empresa é obrigatório")]
         public int Id { get; set; }
 
+        [DisplayName("Porte da Empresa")]
         public string Name { get; set; }
     }
 }
