@@ -15,14 +15,11 @@ namespace Opea.Application.Commands
 
         public async Task<bool> Handle(CreateClientCommand request, CancellationToken cancellationToken)
         {
-            await _clientRepository.InsertAsync(request.Client);
+            request.Client.AddDomainEvent(new ClientRegisteredEvent(request.Client));
 
-            if (request.Client != null)
-                request.Client.AddDomainEvent(new ClientRegisteredEvent(request.Client));
+            await _clientRepository.InsertAsync(request.Client);           
 
-            await _clientRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken);
-
-            return true;
+            return await _clientRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken); ;
         }
     }
 }
