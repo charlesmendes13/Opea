@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Opea.Application.Commands;
 using Opea.Application.Queries;
 using Opea.Application.ViewModels;
@@ -24,9 +23,7 @@ namespace Opea.Web.Controllers
         {
             var clients = await _mediator.Send(new GetAllClientQuery());
 
-            var viewModel = _mapper.Map<IEnumerable<ClientViewModel>>(clients);
-
-            return View(viewModel);
+            return View(_mapper.Map<IEnumerable<ClientViewModel>>(clients));
         }
 
         public async Task<IActionResult> Details(int id)
@@ -111,7 +108,7 @@ namespace Opea.Web.Controllers
         {
             var companySize = CompanySize.GetAll<CompanySize>();
             
-            return Json(companySize);
+            return Json(_mapper.Map<IEnumerable<CompanySizeViewModel>>(companySize));
         }
     }
 }

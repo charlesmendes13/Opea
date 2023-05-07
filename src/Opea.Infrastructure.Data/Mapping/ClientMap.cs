@@ -14,6 +14,7 @@ namespace Opea.Infrastructure.Data.Mapping
 
             builder.Property(b => b.CompanyName);
             builder.Property(b => b.CompanySizeId);
+            builder.Ignore(b => b.CompanySize);
 
             builder.Ignore(b => b.DomainEvents);
         }

@@ -8,8 +8,11 @@ namespace Opea.Application.AutoMapper
     {
         public DomainToViewModelMappingProfile()
         {
-            CreateMap<Client, ClientViewModel>()
-                .AfterMap((e, v) => v.CompanySizeName = CompanySize.FromValue<CompanySize>(e.CompanySizeId)?.Name);
+            CreateMap<CompanySize, CompanySizeViewModel>();
+            CreateMap<Client, ClientViewModel>()              
+                .ForMember(d => d.CompanySize, opt => opt.MapFrom(s => s.CompanySize))
+                    .ForPath(d => d.CompanySize.Id, opt => opt.MapFrom(s => s.CompanySizeId))
+                    .ForPath(d => d.CompanySize.Name, opt => opt.MapFrom(s => CompanySize.FromValue<CompanySize>(s.CompanySizeId).Name));
         }
     }
 }

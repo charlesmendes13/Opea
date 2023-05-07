@@ -11,7 +11,11 @@ namespace Opea.Unit.Test.Application.ViewModels
             {
                 Id = 1,
                 CompanyName = "Google",
-                CompanySizeId = 3
+                CompanySize = new CompanySizeViewModel() 
+                { 
+                    Id = 3,
+                    Name = "Grande"
+                }           
             };
 
             Assert.NotNull(clientViewModel);

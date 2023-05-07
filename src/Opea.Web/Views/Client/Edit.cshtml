@@ -18,9 +18,9 @@
                 <span asp-validation-for="CompanyName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CompanySizeId" class="control-label">Porte da Empresa</label>
-                <select asp-for="CompanySizeId" class="form-control" id="CompanySizeId" name="CompanySizeId"></select>
-                <span asp-validation-for="CompanySizeId" class="text-danger"></span>
+                <label asp-for="CompanySize.Id" class="control-label">Porte da Empresa</label>
+                <select asp-for="CompanySize.Id" name="CompanySize.Id" id="CompanySize" class="form-control"></select>
+                <span asp-validation-for="CompanySize.Id" class="text-danger"></span>
             </div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group" style="margin-top: 10px">
@@ -39,15 +39,15 @@
         $(function () {
             getCompanySize((data) => {
 
-                var v = @Model.CompanySizeId;
+                var v = @Model.CompanySize.Id;
                 var s = '<option value="-1">Selecione...</option>';
 
                 for (var i = 0; i < data.length; i++) {
                     s += '<option value="' + data[i].id + '">' + data[i].name + '</option>';
                 }
 
-                $("#CompanySizeId").html(s);
-                $('#CompanySizeId').val(v);
+                $("#CompanySize").html(s);
+                $('#CompanySize').val(v);
             });
         })
     </script>
