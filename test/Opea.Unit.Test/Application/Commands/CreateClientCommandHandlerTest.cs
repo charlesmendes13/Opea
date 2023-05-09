@@ -8,7 +8,7 @@ namespace Opea.Unit.Test.Application.Commands
         [Fact]
         public async void CreateClientCommandHandler()
         {
-            var client = new Mock<Client>("Meta", 3);
+            var client = new Mock<Client>(1, "Meta", 3);
             var cancellationToken = true;
 
             var clientRepository = new Mock<IClientRepository>();
@@ -16,7 +16,7 @@ namespace Opea.Unit.Test.Application.Commands
             clientRepository.Setup(x => x.UnitOfWork.SaveEntitiesAsync(It.IsAny<CancellationToken>()))
                 .ReturnsAsync(cancellationToken);
 
-            var command = new Mock<CreateClientCommand>(client.Object);
+            var command = new Mock<CreateClientCommand>(client.Object.Id, client.Object.CompanyName, client.Object.CompanySizeId);
             var handler = new Mock<CreateClientCommandHandler>(clientRepository.Object);            
 
             var result = await handler.Object.Handle(command.Object, new CancellationToken());

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Opea.Application.AutoMapper;
+using Opea.Application.Commands;
 using Opea.Application.ViewModels;
 using Opea.Domain.AggregatesModel.ClientAggregate;
 
@@ -24,7 +25,7 @@ namespace Opea.Unit.Test.Application.AutoMapper
                 }
             };
 
-            var result = mapper.Map<ClientViewModel, Client>(request);
+            var result = mapper.Map<ClientViewModel, CreateClientCommand>(request);
 
             Assert.NotNull(result);
         }

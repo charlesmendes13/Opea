@@ -7,7 +7,7 @@ namespace Opea.Unit.Test.Domain.AggragatesModel.ClientAggragate
         [Fact]
         public void Client()
         {
-            var client = new Mock<Client>("Google", 3);
+            var client = new Mock<Client>(1, "Google", 3);
 
             Assert.NotNull(client);
         }

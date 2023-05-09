@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Opea.Application.Commands;
 using Opea.Application.ViewModels;
 using Opea.Domain.AggregatesModel.ClientAggregate;
 
@@ -9,10 +10,16 @@ namespace Opea.Application.AutoMapper
         public ViewModelToDomainMappingProfile()
         {
             CreateMap<CompanySizeViewModel, CompanySize>();
-            CreateMap<ClientViewModel, Client>()
-                .ForMember(d => d.CompanySize, opt => opt.MapFrom(s => s.CompanySize))
-                    .ForPath(d => d.CompanySize.Id, opt => opt.MapFrom(s => s.CompanySize.Id))
-                    .ForPath(d => d.CompanySize.Name, opt => opt.MapFrom(s => CompanySize.FromValue<CompanySize>(s.CompanySize.Id).Name));
+
+            CreateMap<ClientViewModel, CreateClientCommand>()
+                .ForMember(d => d.Id, opt => opt.MapFrom(s => s.CompanySize))
+                .ForMember(d => d.CompanyName, opt => opt.MapFrom(s => s.CompanyName))
+                .ForMember(d => d.CompanySizeId, opt => opt.MapFrom(s => s.CompanySize.Id));
+
+            CreateMap<ClientViewModel, UpdateClientCommand>()
+                .ForMember(d => d.Id, opt => opt.MapFrom(s => s.CompanySize))
+                .ForMember(d => d.CompanyName, opt => opt.MapFrom(s => s.CompanyName))
+                .ForMember(d => d.CompanySizeId, opt => opt.MapFrom(s => s.CompanySize.Id));
         }
     }
 }

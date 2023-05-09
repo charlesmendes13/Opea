@@ -1,15 +1,18 @@
 ﻿using MediatR;
-using Opea.Domain.AggregatesModel.ClientAggregate;
 
 namespace Opea.Domain.Events
 {
     public class ClientRemovedEvent : INotification
     {
-        public Client Client { get; }
+        public int Id { get; private set; }
+        public string CompanyName { get; private set; }
+        public int CompanySizeId { get; private set; }
 
-        public ClientRemovedEvent(Client client)
+        public ClientRemovedEvent(int id, string companyName, int companySizeId)
         {
-            Client = client;
+            Id = id;
+            CompanyName = companyName;
+            CompanySizeId = companySizeId;
         }
     }
 }

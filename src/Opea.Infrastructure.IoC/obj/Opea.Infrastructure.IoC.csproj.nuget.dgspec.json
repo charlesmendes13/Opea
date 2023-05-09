@@ -10,14 +10,14 @@
         "projectUniqueName": "D:\\Visual Studio\\Opea\\src\\Opea.Application\\Opea.Application.csproj",
         "projectName": "Opea.Application",
         "projectPath": "D:\\Visual Studio\\Opea\\src\\Opea.Application\\Opea.Application.csproj",
-        "packagesPath": "C:\\Users\\Charles Mendes\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
         "outputPath": "D:\\Visual Studio\\Opea\\src\\Opea.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Charles Mendes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -25,6 +25,7 @@
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -76,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -86,14 +87,14 @@
         "projectUniqueName": "D:\\Visual Studio\\Opea\\src\\Opea.Domain\\Opea.Domain.csproj",
         "projectName": "Opea.Domain",
         "projectPath": "D:\\Visual Studio\\Opea\\src\\Opea.Domain\\Opea.Domain.csproj",
-        "packagesPath": "C:\\Users\\Charles Mendes\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
         "outputPath": "D:\\Visual Studio\\Opea\\src\\Opea.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Charles Mendes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -101,6 +102,7 @@
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -140,7 +142,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -150,14 +152,14 @@
         "projectUniqueName": "D:\\Visual Studio\\Opea\\src\\Opea.Infrastructure.Data\\Opea.Infrastructure.Data.csproj",
         "projectName": "Opea.Infrastructure.Data",
         "projectPath": "D:\\Visual Studio\\Opea\\src\\Opea.Infrastructure.Data\\Opea.Infrastructure.Data.csproj",
-        "packagesPath": "C:\\Users\\Charles Mendes\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
         "outputPath": "D:\\Visual Studio\\Opea\\src\\Opea.Infrastructure.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Charles Mendes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -165,6 +167,7 @@
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -222,7 +225,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -232,14 +235,14 @@
         "projectUniqueName": "D:\\Visual Studio\\Opea\\src\\Opea.Infrastructure.IoC\\Opea.Infrastructure.IoC.csproj",
         "projectName": "Opea.Infrastructure.IoC",
         "projectPath": "D:\\Visual Studio\\Opea\\src\\Opea.Infrastructure.IoC\\Opea.Infrastructure.IoC.csproj",
-        "packagesPath": "C:\\Users\\Charles Mendes\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
         "outputPath": "D:\\Visual Studio\\Opea\\src\\Opea.Infrastructure.IoC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Charles Mendes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -247,6 +250,7 @@
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -296,7 +300,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
