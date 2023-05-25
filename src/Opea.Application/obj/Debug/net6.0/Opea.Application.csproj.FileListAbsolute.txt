@@ -13,3 +13,18 @@ D:\Visual Studio\Opea\src\Opea.Application\obj\Debug\net6.0\Opea.Application.dll
 D:\Visual Studio\Opea\src\Opea.Application\obj\Debug\net6.0\refint\Opea.Application.dll
 D:\Visual Studio\Opea\src\Opea.Application\obj\Debug\net6.0\Opea.Application.pdb
 D:\Visual Studio\Opea\src\Opea.Application\obj\Debug\net6.0\ref\Opea.Application.dll
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Application\bin\Debug\net6.0\Opea.Application.deps.json
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Application\bin\Debug\net6.0\Opea.Application.dll
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Application\bin\Debug\net6.0\Opea.Application.pdb
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Application\bin\Debug\net6.0\Opea.Domain.dll
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Application\bin\Debug\net6.0\Opea.Domain.pdb
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Application\obj\Debug\net6.0\Opea.Application.csproj.AssemblyReference.cache
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Application\obj\Debug\net6.0\Opea.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Application\obj\Debug\net6.0\Opea.Application.AssemblyInfoInputs.cache
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Application\obj\Debug\net6.0\Opea.Application.AssemblyInfo.cs
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Application\obj\Debug\net6.0\Opea.Application.csproj.CoreCompileInputs.cache
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Application\obj\Debug\net6.0\Opea.Application.csproj.CopyComplete
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Application\obj\Debug\net6.0\Opea.Application.dll
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Application\obj\Debug\net6.0\refint\Opea.Application.dll
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Application\obj\Debug\net6.0\Opea.Application.pdb
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Application\obj\Debug\net6.0\ref\Opea.Application.dll

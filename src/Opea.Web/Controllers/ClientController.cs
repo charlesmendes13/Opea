@@ -1,11 +1,9 @@
 ﻿using AutoMapper;
-using Azure.Core;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Opea.Application.Commands;
 using Opea.Application.Queries;
 using Opea.Application.ViewModels;
-using Opea.Domain.AggregatesModel.ClientAggregate;
 
 namespace Opea.Web.Controllers
 {
@@ -107,8 +105,8 @@ namespace Opea.Web.Controllers
         [HttpGet]
         public JsonResult GetCompanySize()
         {
-            var companySize = CompanySize.GetAll<CompanySize>();
-            
+            var companySize = _mediator.Send(new GetAllCompanySizeQuery());
+
             return Json(_mapper.Map<IEnumerable<CompanySizeViewModel>>(companySize));
         }
     }

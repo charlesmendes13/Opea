@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Visual Studio\\Opea\\test\\Opea.Unit.Test\\Opea.Unit.Test.csproj": {}
+    "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\test\\Opea.Unit.Test\\Opea.Unit.Test.csproj": {}
   },
   "projects": {
-    "D:\\Visual Studio\\Opea\\src\\Opea.Application\\Opea.Application.csproj": {
+    "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Application\\Opea.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio\\Opea\\src\\Opea.Application\\Opea.Application.csproj",
+        "projectUniqueName": "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Application\\Opea.Application.csproj",
         "projectName": "Opea.Application",
-        "projectPath": "D:\\Visual Studio\\Opea\\src\\Opea.Application\\Opea.Application.csproj",
-        "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio\\Opea\\src\\Opea.Application\\obj\\",
+        "projectPath": "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Application\\Opea.Application.csproj",
+        "packagesPath": "C:\\Users\\charlesmendes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\charlesmendes\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Visual Studio\\Opea\\src\\Opea.Domain\\Opea.Domain.csproj": {
-                "projectPath": "D:\\Visual Studio\\Opea\\src\\Opea.Domain\\Opea.Domain.csproj"
+              "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Domain\\Opea.Domain.csproj": {
+                "projectPath": "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Domain\\Opea.Domain.csproj"
               }
             }
           }
@@ -77,24 +77,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Visual Studio\\Opea\\src\\Opea.Domain\\Opea.Domain.csproj": {
+    "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Domain\\Opea.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio\\Opea\\src\\Opea.Domain\\Opea.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Domain\\Opea.Domain.csproj",
         "projectName": "Opea.Domain",
-        "projectPath": "D:\\Visual Studio\\Opea\\src\\Opea.Domain\\Opea.Domain.csproj",
-        "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio\\Opea\\src\\Opea.Domain\\obj\\",
+        "projectPath": "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Domain\\Opea.Domain.csproj",
+        "packagesPath": "C:\\Users\\charlesmendes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\charlesmendes\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -142,24 +142,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Visual Studio\\Opea\\src\\Opea.Infrastructure.Data\\Opea.Infrastructure.Data.csproj": {
+    "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Infrastructure.Data\\Opea.Infrastructure.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio\\Opea\\src\\Opea.Infrastructure.Data\\Opea.Infrastructure.Data.csproj",
+        "projectUniqueName": "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Infrastructure.Data\\Opea.Infrastructure.Data.csproj",
         "projectName": "Opea.Infrastructure.Data",
-        "projectPath": "D:\\Visual Studio\\Opea\\src\\Opea.Infrastructure.Data\\Opea.Infrastructure.Data.csproj",
-        "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio\\Opea\\src\\Opea.Infrastructure.Data\\obj\\",
+        "projectPath": "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Infrastructure.Data\\Opea.Infrastructure.Data.csproj",
+        "packagesPath": "C:\\Users\\charlesmendes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Infrastructure.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\charlesmendes\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -174,8 +174,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Visual Studio\\Opea\\src\\Opea.Domain\\Opea.Domain.csproj": {
-                "projectPath": "D:\\Visual Studio\\Opea\\src\\Opea.Domain\\Opea.Domain.csproj"
+              "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Domain\\Opea.Domain.csproj": {
+                "projectPath": "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Domain\\Opea.Domain.csproj"
               }
             }
           }
@@ -225,24 +225,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Visual Studio\\Opea\\src\\Opea.Infrastructure.IoC\\Opea.Infrastructure.IoC.csproj": {
+    "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Infrastructure.IoC\\Opea.Infrastructure.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio\\Opea\\src\\Opea.Infrastructure.IoC\\Opea.Infrastructure.IoC.csproj",
+        "projectUniqueName": "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Infrastructure.IoC\\Opea.Infrastructure.IoC.csproj",
         "projectName": "Opea.Infrastructure.IoC",
-        "projectPath": "D:\\Visual Studio\\Opea\\src\\Opea.Infrastructure.IoC\\Opea.Infrastructure.IoC.csproj",
-        "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio\\Opea\\src\\Opea.Infrastructure.IoC\\obj\\",
+        "projectPath": "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Infrastructure.IoC\\Opea.Infrastructure.IoC.csproj",
+        "packagesPath": "C:\\Users\\charlesmendes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Infrastructure.IoC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\charlesmendes\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -257,14 +257,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Visual Studio\\Opea\\src\\Opea.Application\\Opea.Application.csproj": {
-                "projectPath": "D:\\Visual Studio\\Opea\\src\\Opea.Application\\Opea.Application.csproj"
+              "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Application\\Opea.Application.csproj": {
+                "projectPath": "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Application\\Opea.Application.csproj"
               },
-              "D:\\Visual Studio\\Opea\\src\\Opea.Domain\\Opea.Domain.csproj": {
-                "projectPath": "D:\\Visual Studio\\Opea\\src\\Opea.Domain\\Opea.Domain.csproj"
+              "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Domain\\Opea.Domain.csproj": {
+                "projectPath": "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Domain\\Opea.Domain.csproj"
               },
-              "D:\\Visual Studio\\Opea\\src\\Opea.Infrastructure.Data\\Opea.Infrastructure.Data.csproj": {
-                "projectPath": "D:\\Visual Studio\\Opea\\src\\Opea.Infrastructure.Data\\Opea.Infrastructure.Data.csproj"
+              "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Infrastructure.Data\\Opea.Infrastructure.Data.csproj": {
+                "projectPath": "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Infrastructure.Data\\Opea.Infrastructure.Data.csproj"
               }
             }
           }
@@ -300,24 +300,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Visual Studio\\Opea\\test\\Opea.Unit.Test\\Opea.Unit.Test.csproj": {
+    "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\test\\Opea.Unit.Test\\Opea.Unit.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio\\Opea\\test\\Opea.Unit.Test\\Opea.Unit.Test.csproj",
+        "projectUniqueName": "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\test\\Opea.Unit.Test\\Opea.Unit.Test.csproj",
         "projectName": "Opea.Unit.Test",
-        "projectPath": "D:\\Visual Studio\\Opea\\test\\Opea.Unit.Test\\Opea.Unit.Test.csproj",
-        "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio\\Opea\\test\\Opea.Unit.Test\\obj\\",
+        "projectPath": "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\test\\Opea.Unit.Test\\Opea.Unit.Test.csproj",
+        "packagesPath": "C:\\Users\\charlesmendes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\test\\Opea.Unit.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\charlesmendes\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -332,8 +332,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Visual Studio\\Opea\\src\\Opea.Infrastructure.IoC\\Opea.Infrastructure.IoC.csproj": {
-                "projectPath": "D:\\Visual Studio\\Opea\\src\\Opea.Infrastructure.IoC\\Opea.Infrastructure.IoC.csproj"
+              "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Infrastructure.IoC\\Opea.Infrastructure.IoC.csproj": {
+                "projectPath": "C:\\Users\\charlesmendes\\source\\repos\\charlesmendes13\\Opea\\src\\Opea.Infrastructure.IoC\\Opea.Infrastructure.IoC.csproj"
               }
             }
           }
@@ -393,7 +393,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
