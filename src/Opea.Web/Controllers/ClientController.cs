@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Azure.Core;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Opea.Application.Commands;
@@ -61,7 +60,7 @@ namespace Opea.Web.Controllers
             var client = await _mediator.Send(new GetByIdClientQuery(id));
 
             if (client == null)
-                return BadRequest();
+                return NotFound();
 
             return View(_mapper.Map<ClientViewModel>(client));
         }
@@ -72,7 +71,7 @@ namespace Opea.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                await _mediator.Send(_mapper.Map< UpdateClientCommand>(request));
+                await _mediator.Send(_mapper.Map<UpdateClientCommand>(request));
 
                 return RedirectToAction(nameof(Index));
             }
@@ -94,12 +93,7 @@ namespace Opea.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var client = await _mediator.Send(new GetByIdClientQuery(id));
-
-            if (client == null)
-                return BadRequest();
-
-            await _mediator.Send(_mapper.Map<DeleteClientCommand>(client));            
+            await _mediator.Send(new DeleteClientCommand(id));            
 
             return RedirectToAction(nameof(Index));
         }

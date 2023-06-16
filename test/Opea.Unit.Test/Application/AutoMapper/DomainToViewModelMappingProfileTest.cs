@@ -13,7 +13,7 @@ namespace Opea.Unit.Test.Application.AutoMapper
             var config = new MapperConfiguration(cfg => cfg.AddProfile<DomainToViewModelMappingProfile>());
             var mapper = config.CreateMapper();
 
-            var request = new Mock<Client>(1, "Google", 3);         
+            var request = new Mock<Client>("Google", 3);         
 
             var result = mapper.Map<Client, ClientViewModel>(request.Object);
 

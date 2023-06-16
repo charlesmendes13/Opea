@@ -1,4 +1,5 @@
 ﻿using Opea.Domain.Commom;
+using Opea.Domain.Events;
 using Opea.Domain.Exceptions;
 
 namespace Opea.Domain.AggregatesModel.ClientAggregate
@@ -11,11 +12,28 @@ namespace Opea.Domain.AggregatesModel.ClientAggregate
 
         protected Client() { }
 
-        public Client(int id, string companyName, int companySizeId)
+        public Client(string companyName, int companySizeId)
         {
-            Id = id;
             CompanyName = !string.IsNullOrWhiteSpace(companyName) ? companyName : throw new DomainException(nameof(companyName));
             CompanySizeId = companySizeId > 0 ? companySizeId : throw new DomainException(nameof(companySizeId));
+
+            AddDomainEvent(new ClientRegisteredEvent(companyName, companySizeId));
+        }
+
+        public void Update(int id, string companyName, int companySizeId)
+        {
+            Id = id > 0 ? id : throw new DomainException(nameof(id));
+            CompanyName = !string.IsNullOrWhiteSpace(companyName) ? companyName : throw new DomainException(nameof(companyName));
+            CompanySizeId = companySizeId > 0 ? companySizeId : throw new DomainException(nameof(companySizeId));
+
+            AddDomainEvent(new ClientUpdatedEvent(id, companyName, companySizeId));
+        }
+
+        public void Delete(int id)
+        {
+            Id = id > 0 ? id : throw new DomainException(nameof(id));
+
+            AddDomainEvent(new ClientRemovedEvent(id));
         }
     }
 }

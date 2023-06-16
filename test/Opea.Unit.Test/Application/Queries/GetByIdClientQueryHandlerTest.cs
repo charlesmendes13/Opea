@@ -8,7 +8,7 @@ namespace Opea.Unit.Test.Application.Queries
         [Fact]
         public async void GetByIdClientQueryHandler()
         {
-            var client = new Mock<Client>(1, "Meta", 3);
+            var client = new Mock<Client>("Meta", 3);
             client.Setup(x => x.Id).Returns(1);
 
             var clientRepository = new Mock<IClientRepository>();

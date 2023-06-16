@@ -7,7 +7,7 @@ namespace Opea.Unit.Test.Infrastructure.Repository
         [Fact]
         public async void GetAllAsync()
         {
-            var client = new Mock<Client>(1, "Meta", 3);
+            var client = new Mock<Client>("Meta", 3);
             client.Setup(x => x.Id).Returns(1);
 
             var clients = new List<Client>()
@@ -27,7 +27,7 @@ namespace Opea.Unit.Test.Infrastructure.Repository
         [Fact]
         public async void GetByIdAsync()
         {
-            var client = new Mock<Client>(1, "Meta", 3);
+            var client = new Mock<Client>("Meta", 3);
             client.Setup(x => x.Id).Returns(1);
 
             var clientRepository = new Mock<IClientRepository>();
@@ -42,7 +42,7 @@ namespace Opea.Unit.Test.Infrastructure.Repository
         [Fact]
         public async void InsertAsync()
         {
-            var client = new Mock<Client>(1, "Meta", 3);
+            var client = new Mock<Client>("Meta", 3);
             client.Setup(x => x.Id).Returns(1);
 
             var clientRepository = new Mock<IClientRepository>();
@@ -54,7 +54,7 @@ namespace Opea.Unit.Test.Infrastructure.Repository
         [Fact]
         public void Update()
         {
-            var client = new Mock<Client>(1, "Meta", 3);
+            var client = new Mock<Client>("Meta", 3);
             client.Setup(x => x.Id).Returns(1);
 
             var clientRepository = new Mock<IClientRepository>();
@@ -66,7 +66,7 @@ namespace Opea.Unit.Test.Infrastructure.Repository
         [Fact]
         public void Delete()
         {
-            var client = new Mock<Client>(1, "Meta", 3);
+            var client = new Mock<Client>("Meta", 3);
             client.Setup(x => x.Id).Returns(1);
 
             var clientRepository = new Mock<IClientRepository>();

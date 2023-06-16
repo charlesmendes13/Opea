@@ -10,9 +10,9 @@ namespace Opea.Unit.Test.Application.Queries
         {
             var clients = new List<Client>()
             {
-                new Mock<Client>(1, "Meta", 3).Object,
-                new Mock<Client>(2, "Google", 3).Object,
-                new Mock<Client>(3, "Microsoft", 3).Object
+                new Mock<Client>("Meta", 3).Object,
+                new Mock<Client>("Google", 3).Object,
+                new Mock<Client>("Microsoft", 3).Object
             };
 
             var clientRepository = new Mock<IClientRepository>();

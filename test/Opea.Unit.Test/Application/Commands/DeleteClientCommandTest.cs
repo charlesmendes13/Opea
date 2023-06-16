@@ -8,8 +8,10 @@ namespace Opea.Unit.Test.Application.Commands
         [Fact]
         public void DeleteClientCommand()
         {
-            var client = new Mock<Client>(1, "Google", 3);
-            var deleteClientCommand = new Mock<DeleteClientCommand>(client.Object.Id, client.Object.CompanyName, client.Object.CompanySizeId);
+            var client = new Mock<Client>("Google", 3);
+            client.Setup(x => x.Id).Returns(1);
+
+            var deleteClientCommand = new Mock<DeleteClientCommand>(client.Object.Id);
 
             Assert.NotNull(deleteClientCommand.Object);
         }

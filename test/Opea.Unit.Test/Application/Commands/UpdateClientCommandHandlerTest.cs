@@ -8,11 +8,13 @@ namespace Opea.Unit.Test.Application.Commands
         [Fact]
         public async void UpdateClientCommandHandler()
         {
-            var client = new Mock<Client>(1, "Meta", 3);
+            var client = new Mock<Client>("Meta", 3);
             client.Setup(x => x.Id).Returns(1);
             var cancellationToken = true;
 
             var clientRepository = new Mock<IClientRepository>();
+            clientRepository.Setup(x => x.GetByIdAsync(It.IsAny<int>()))
+                .ReturnsAsync(client.Object);
             clientRepository.Setup(x => x.Update(It.IsAny<Client>()));               
             clientRepository.Setup(x => x.UnitOfWork.SaveEntitiesAsync(It.IsAny<CancellationToken>()))
                 .ReturnsAsync(cancellationToken);
