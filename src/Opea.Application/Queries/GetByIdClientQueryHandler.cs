@@ -18,7 +18,7 @@ namespace Opea.Application.Queries
             var client = await _clientRepository.GetByIdAsync(request.Id);
 
             if (client is null)
-                throw new DomainException(nameof(client));
+                throw new KeyNotFoundException(nameof(client));
 
             return client;
         }

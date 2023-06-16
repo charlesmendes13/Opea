@@ -29,9 +29,6 @@ namespace Opea.Web.Controllers
         {
             var client = await _mediator.Send(new GetByIdClientQuery(id));
 
-            if (client == null)
-                return NotFound();
-
             return View(_mapper.Map<ClientViewModel>(client));
         }
 
@@ -58,9 +55,6 @@ namespace Opea.Web.Controllers
         {
             var client = await _mediator.Send(new GetByIdClientQuery(id));
 
-            if (client == null)
-                return NotFound();
-
             return View(_mapper.Map<ClientViewModel>(client));
         }
 
@@ -81,9 +75,6 @@ namespace Opea.Web.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             var client = await _mediator.Send(new GetByIdClientQuery(id));
-
-            if (client == null)
-                return NotFound();           
 
             return View(_mapper.Map<ClientViewModel>(client));
         }
