@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "i8QX8XD4kxjfawqqZVdAEqRfD+kMNk5+VdDsdMSOtrLpjcdE6SrXSm1ggwr0AGl1OWcwasUNcEUAR67keN1+Wg==",
+  "dgSpecHash": "4Xv43T1AN3NxXWMRiEmhfqfwdDPl/R9vdf13z2cWdAgUnbpCSrpJFx3GHSFObQkEwWrtGQVVlcYPxCzZRbnN+Q==",
   "success": true,
   "projectFilePath": "D:\\Visual Studio\\Opea\\src\\Opea.Domain\\Opea.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\charl\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
-    "C:\\Users\\charl\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\charl\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+    "C:\\Users\\Charles Mendes\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
+    "C:\\Users\\Charles Mendes\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\Charles Mendes\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
