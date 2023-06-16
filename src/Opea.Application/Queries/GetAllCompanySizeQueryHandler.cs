@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Opea.Domain.AggregatesModel.ClientAggregate;
+using Opea.Domain.Exceptions;
 
 namespace Opea.Application.Queries
 {
@@ -7,9 +8,14 @@ namespace Opea.Application.Queries
     {
         public GetAllCompanySizeQueryHandler() { }
 
-        public Task<IEnumerable<CompanySize>> Handle(GetAllCompanySizeQuery request, CancellationToken cancellationToken)
+        public async Task<IEnumerable<CompanySize>> Handle(GetAllCompanySizeQuery request, CancellationToken cancellationToken)
         {
-            return Task.FromResult(CompanySize.GetAll<CompanySize>());
+            var companySizes = await Task.FromResult(CompanySize.GetAll<CompanySize>());
+
+            if (companySizes.Count() == 0)
+                throw new DomainException(nameof(companySizes));
+
+            return companySizes;
         }
     }
 }

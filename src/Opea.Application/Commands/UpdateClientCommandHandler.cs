@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Opea.Domain.AggregatesModel.ClientAggregate;
+using Opea.Domain.Exceptions;
 
 namespace Opea.Application.Commands
 {
@@ -17,7 +18,7 @@ namespace Opea.Application.Commands
             var client = await _clientRepository.GetByIdAsync(request.Id);
 
             if (client is null)
-                return false;
+                throw new DomainException(nameof(client));
 
             client.Update(request.Id, request.CompanyName, request.CompanySizeId);
 

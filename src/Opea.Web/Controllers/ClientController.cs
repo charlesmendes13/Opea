@@ -100,9 +100,9 @@ namespace Opea.Web.Controllers
         [HttpGet]
         public async Task<JsonResult> GetCompanySize()
         {
-            var companySize = await _mediator.Send(new GetAllCompanySizeQuery());
+            var companySizes = await _mediator.Send(new GetAllCompanySizeQuery());
 
-            return Json(_mapper.Map<IEnumerable<CompanySizeViewModel>>(companySize));
+            return Json(_mapper.Map<IEnumerable<CompanySizeViewModel>>(companySizes));
         }
     }
 }
