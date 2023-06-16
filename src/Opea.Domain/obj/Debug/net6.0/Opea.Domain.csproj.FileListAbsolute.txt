@@ -10,3 +10,15 @@ D:\Visual Studio\Opea\src\Opea.Domain\obj\Debug\net6.0\Opea.Domain.dll
 D:\Visual Studio\Opea\src\Opea.Domain\obj\Debug\net6.0\refint\Opea.Domain.dll
 D:\Visual Studio\Opea\src\Opea.Domain\obj\Debug\net6.0\Opea.Domain.pdb
 D:\Visual Studio\Opea\src\Opea.Domain\obj\Debug\net6.0\ref\Opea.Domain.dll
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Domain\bin\Debug\net6.0\Opea.Domain.deps.json
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Domain\bin\Debug\net6.0\Opea.Domain.dll
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Domain\bin\Debug\net6.0\Opea.Domain.pdb
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Domain\obj\Debug\net6.0\Opea.Domain.csproj.AssemblyReference.cache
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Domain\obj\Debug\net6.0\Opea.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Domain\obj\Debug\net6.0\Opea.Domain.AssemblyInfoInputs.cache
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Domain\obj\Debug\net6.0\Opea.Domain.AssemblyInfo.cs
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Domain\obj\Debug\net6.0\Opea.Domain.csproj.CoreCompileInputs.cache
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Domain\obj\Debug\net6.0\Opea.Domain.dll
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Domain\obj\Debug\net6.0\refint\Opea.Domain.dll
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Domain\obj\Debug\net6.0\Opea.Domain.pdb
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Domain\obj\Debug\net6.0\ref\Opea.Domain.dll

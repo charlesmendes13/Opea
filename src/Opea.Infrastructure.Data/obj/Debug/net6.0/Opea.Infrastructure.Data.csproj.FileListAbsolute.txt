@@ -15,3 +15,20 @@ D:\Visual Studio\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\refint\Opea.
 D:\Visual Studio\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\Opea.Infrastructure.Data.pdb
 D:\Visual Studio\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\Opea.Infrastructure.Data.genruntimeconfig.cache
 D:\Visual Studio\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\ref\Opea.Infrastructure.Data.dll
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Infrastructure.Data\bin\Debug\net6.0\Opea.Infrastructure.Data.deps.json
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Infrastructure.Data\bin\Debug\net6.0\Opea.Infrastructure.Data.runtimeconfig.json
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Infrastructure.Data\bin\Debug\net6.0\Opea.Infrastructure.Data.dll
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Infrastructure.Data\bin\Debug\net6.0\Opea.Infrastructure.Data.pdb
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Infrastructure.Data\bin\Debug\net6.0\Opea.Domain.dll
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Infrastructure.Data\bin\Debug\net6.0\Opea.Domain.pdb
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\Opea.Infrastructure.Data.csproj.AssemblyReference.cache
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\Opea.Infrastructure.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\Opea.Infrastructure.Data.AssemblyInfoInputs.cache
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\Opea.Infrastructure.Data.AssemblyInfo.cs
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\Opea.Infrastructure.Data.csproj.CoreCompileInputs.cache
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\Opea.Infrastructure.Data.csproj.CopyComplete
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\Opea.Infrastructure.Data.dll
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\refint\Opea.Infrastructure.Data.dll
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\Opea.Infrastructure.Data.pdb
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\Opea.Infrastructure.Data.genruntimeconfig.cache
+C:\Users\charlesmendes\Source\Repos\charlesmendes13\Opea\src\Opea.Infrastructure.Data\obj\Debug\net6.0\ref\Opea.Infrastructure.Data.dll

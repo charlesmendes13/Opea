@@ -17,6 +17,7 @@ namespace Opea.Infrastructure.IoC
             // Application
 
             container.AddScoped<IRequestHandler<GetAllClientQuery, IEnumerable<Client>>, GetAllClientQueryHandler>();
+            container.AddScoped<IRequestHandler<GetAllCompanySizeQuery, IEnumerable<CompanySize>>, GetAllCompanySizeQueryHandler>();
             container.AddScoped<IRequestHandler<GetByIdClientQuery, Client>, GetByIdClientQueryHandler>();
             container.AddScoped<IRequestHandler<CreateClientCommand, bool>, CreateClientCommandHandler>();
             container.AddScoped<IRequestHandler<DeleteClientCommand, bool>, DeleteClientCommandHandler>();
